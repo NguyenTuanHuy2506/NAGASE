@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+body > main {
+  -ms-overflow-x: hidden;
+}
+
+@supports (-ms-ime-align: auto) {
+  body > main {
+    overflow: hidden;
+  }
+}
+figure img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "YuminDemi";
+  src: url("../assets/plugins/fonts/yumindb.ttf");
+}
+.nav {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav-brand {
+  width: 100%;
+  max-width: 20.3rem;
+  margin-left: 3rem;
+  transition: all 0.3s ease;
+}
+.nav .nav-brand:hover {
+  opacity: 0.75;
+}
+.nav .navbar {
+  width: 100%;
+  margin-right: 2rem;
+}
+.nav .navbar ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav .navbar ul li .nav-link {
+  width: 18rem;
+  height: 4rem;
+  background-color: #d30712;
+  border-radius: 5px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-left: 2.4rem;
+  border: 2px solid #d30712;
+  transition: all 0.3s ease;
+}
+.nav .navbar ul li .nav-link:hover {
+  background-color: #fff;
+  color: #d30712;
+}
+
+/*# sourceMappingURL=common.css.map */
