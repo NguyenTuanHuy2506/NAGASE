@@ -342,6 +342,13 @@
     transition: all 0.3s ease;
 }
 
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .tab-item {
+        padding-top: 8px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .tab-item {
         font-size: 1.4rem;
@@ -380,6 +387,13 @@
     border: 2px solid #d30712;
     border-radius: 5px;
     transition: all 0.3s ease;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .download-button {
+        padding-top: 6px;
+    }
 }
 
 .download-button:hover {

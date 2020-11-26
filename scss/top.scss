@@ -292,6 +292,9 @@ $trans: all .3s ease;
         margin-right: .3rem;
         cursor: pointer;
         transition: $trans;
+        @include onIE {
+            padding-top: 8px;
+        }
         @include mobile {
             font-size: 1.4rem;
         }
@@ -327,6 +330,9 @@ $trans: all .3s ease;
     border: 2px solid #d30712;
     border-radius: 5px;
     transition: $trans;
+    @include onIE {
+        padding-top: 6px;
+    }
     &:hover {
         background-color: #fff;
         color: #d30712;

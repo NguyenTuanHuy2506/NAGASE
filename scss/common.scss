@@ -103,6 +103,9 @@ $trans: all .3s ease;
                     margin-left: 2.4rem;
                     border: 2px solid #d30712;
                     transition: $trans;
+                    @include onIE {
+                        padding-top: 6px;
+                    }
                     &:hover {
                         background-color: #fff;
                         color: #d30712;
@@ -246,6 +249,9 @@ $trans: all .3s ease;
         flex-wrap: wrap;
         padding-top: 3.5rem;
         padding-bottom: 3rem;
+        @include onIE {
+            justify-content: flex-start;
+        }
         p {
             color: #111111;
             font-size: 1.8rem;

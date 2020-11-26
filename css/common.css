@@ -120,6 +120,13 @@ figure img {
     transition: all 0.3s ease;
 }
 
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .nav .navbar ul li .nav-link {
+        padding-top: 6px;
+    }
+}
+
 .nav .navbar ul li .nav-link:hover {
     background-color: #fff;
     color: #d30712;
@@ -282,6 +289,13 @@ figure img {
     flex-wrap: wrap;
     padding-top: 3.5rem;
     padding-bottom: 3rem;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .footer-container {
+        justify-content: flex-start;
+    }
 }
 
 .footer-container p {
