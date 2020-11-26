@@ -15,6 +15,8 @@ const _compactIndex = $('.js-content-compact .tab-index');
 // others
 const _othersItem = $('.js-tab-others .tab-item');
 const _othersIndex = $('.js-content-others .tab-index');
+
+
 _slider.slick({
     dots: false,
     infinite: true,
@@ -70,3 +72,57 @@ function __Change(_class, _eq) {
     _class.removeClass('active');
     _class.eq(_eq).addClass('active');
 }
+
+const _hamburger = $('.hamburger');
+const _navbar = $('.navbar');
+const _mark = $('.mark');
+const _totop = $('.to-top-button');
+const _wHeight = window.innerHeight;
+
+var _xstart = 0,
+    _wstart = 0,
+    _eqstart = 1;
+
+$(window).on('scroll load resize', function(e) {
+    let _wW = window.innerWidth;
+    let _wY = window.pageYOffset;
+
+    if (_wY >= _wHeight / 2) {
+        _totop.addClass('active');
+    } else {
+        _totop.removeClass('active');
+    }
+    if (_wW > 768) {
+        _remove();
+    }
+});
+
+
+_hamburger.on('click', function() {
+    $(this).hasClass('active') ? _remove() : _add();
+});
+
+_mark.on('click', function() {
+    _hamburger.hasClass('active') ? _remove() : _add();
+})
+
+function _remove() {
+    _hamburger.removeClass('active');
+    _navbar.removeClass('active');
+    _mark.removeClass('active');
+}
+
+function _add() {
+    _hamburger.addClass('active');
+    _navbar.addClass('active');
+    _mark.addClass('active');
+}
+_totop.click(function(e) {
+    e.preventDefault();
+    $("html,body").animate({
+            scrollTop: 0,
+        },
+        1000,
+        "swing"
+    );
+});
