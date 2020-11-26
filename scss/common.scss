@@ -226,9 +226,7 @@ $trans: all .3s ease;
         position: relative;
         transition: $trans;
         &:hover {
-            span {
-                opacity: .75;
-            }
+            opacity: .75;
         }
         span {
             width: 1.8rem;

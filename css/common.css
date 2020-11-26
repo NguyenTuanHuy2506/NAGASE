@@ -266,7 +266,7 @@ figure img {
     transition: all 0.3s ease;
 }
 
-.footer .arrow-up:hover span {
+.footer .arrow-up:hover {
     opacity: 0.75;
 }
 
