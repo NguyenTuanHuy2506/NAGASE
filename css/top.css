@@ -367,12 +367,14 @@
     font-weight: 700;
     color: #fff;
     background-color: #d30712;
-    border-radius: 3px;
+    border: 2px solid #d30712;
+    border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .download-button:hover {
-    color: rgba(255, 255, 255, 0.5);
+    background-color: #fff;
+    color: #d30712;
 }
 
 .tab-content {
