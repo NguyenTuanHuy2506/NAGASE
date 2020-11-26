@@ -31,10 +31,18 @@ _slider.slick({
 
 _slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 
+    // console.log()
     if (nextSlide == 1) {
+        _sliderContent.removeClass('best-active');
         _sliderContent.addClass('active');
-    } else {
+    } else
+    if (nextSlide == 2) {
         _sliderContent.removeClass('active');
+        _sliderContent.addClass('best-active');
+    } else {
+        _sliderContent.removeClass('best-active');
+        _sliderContent.removeClass('active');
+
     }
 });
 

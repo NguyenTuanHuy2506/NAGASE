@@ -37,7 +37,7 @@ $trans: all .3s ease;
         position: absolute;
         z-index: 1;
         top: 50%;
-        left: 11.5rem;
+        left: 11rem;
         transform: translateY(-50%);
         h2,
         p {
@@ -49,19 +49,40 @@ $trans: all .3s ease;
             font-size: 4.8rem;
             line-height: 1.4;
             letter-spacing: .2rem;
-            span {
+            .t-en {
+                display: inline-block;
+                padding: 0 .5rem;
+            }
+            .lead {
                 display: block;
+                padding: 0 .5rem;
+                @include onIE {
+                    padding-top: 12px;
+                }
             }
         }
         p {
+            display: inline-block;
             margin-top: 6rem;
             font-size: 2rem;
+            padding: 0 .5rem;
         }
         &.active {
             h2,
             p {
                 color: #fff;
                 text-shadow: 1px 1px 10px rgba(#000, 1), 1px 1px 10px rgba(#000, 1);
+            }
+        }
+        &.best-active {
+            h2 {
+                .t-en,
+                .lead {
+                    background-color: rgba(#f1f7f9, .85);
+                }
+            }
+            p {
+                background-color: #f1f7f9;
             }
         }
         @include mobile {
@@ -130,6 +151,9 @@ $trans: all .3s ease;
     }
     .article {
         max-width: 70%;
+        @include onIE {
+            padding-top: 4px;
+        }
         .article-desc,
         .article-date {
             transition: $trans;
@@ -156,6 +180,9 @@ $trans: all .3s ease;
         margin-top: auto;
         color: #18384a;
         transition: $trans;
+        @include onIE {
+            padding-top: 4px;
+        }
         &:hover {
             color: rgba(#18384a, .5);
         }
@@ -468,5 +495,13 @@ $trans: all .3s ease;
             // width: 100%;
             max-width: 100%;
         }
+    }
+    .explain {
+        color: #d30712;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: -.15rem;
+        margin-left: 4px;
+        margin-top: .5rem;
     }
 }
