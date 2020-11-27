@@ -258,7 +258,9 @@ $trans: all .3s ease;
         width: 100%;
         max-width: 64rem;
         margin: 0 auto;
-        overflow-x: scroll;
+        iframe {
+            max-width: 100%;
+        }
     }
     @include near_mobile {
         padding: 0 2rem;

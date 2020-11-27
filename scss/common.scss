@@ -143,6 +143,7 @@ $trans: all .3s ease;
 
 .main {
     margin-top: 8rem;
+    display: block;
     @include mobile {
         margin-top: 5rem;
     }
