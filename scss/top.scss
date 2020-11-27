@@ -16,7 +16,7 @@ $trans: all .3s ease;
             }
         }
     }
-    @include screen640 {
+    @include near_mobile {
         height: 400px;
         .slider {
             height: 400px;
@@ -94,7 +94,7 @@ $trans: all .3s ease;
                 font-size: 1.6rem;
             }
         }
-        @include screen640 {
+        @include near_mobile {
             h2 {
                 font-size: 2rem;
             }
@@ -154,17 +154,18 @@ $trans: all .3s ease;
         @include onIE {
             padding-top: 4px;
         }
-        .article-desc,
-        .article-date {
-            transition: $trans;
-            &:hover {
-                color: rgba(#18384a, .5);
-            }
+        transition: $trans;
+        a {
+            display: block;
+            color: #111111;
+        }
+        &:hover {
+            opacity: .75;
         }
         @include ipadpro {
             margin-top: 3rem;
         }
-        @include screen640 {
+        @include near_mobile {
             max-width: 100%;
         }
     }
@@ -186,7 +187,7 @@ $trans: all .3s ease;
         &:hover {
             color: rgba(#18384a, .5);
         }
-        @include screen640 {
+        @include near_mobile {
             margin-top: 3rem;
         }
     }
@@ -257,12 +258,10 @@ $trans: all .3s ease;
         width: 100%;
         max-width: 64rem;
         margin: 0 auto;
-        @include screen640 {
-            padding: 0 2rem;
-        }
+        overflow-x: scroll;
     }
-    @include screen640 {
-        padding: 0;
+    @include near_mobile {
+        padding: 0 2rem;
     }
 }
 
@@ -279,15 +278,15 @@ $trans: all .3s ease;
             border-radius: 50%;
             box-shadow: 0 0 12px 0px rgba(#000, .5);
         }
-        span {
+        figcaption>h4 {
             margin-top: 1.2rem;
             font-size: 2.4rem;
             color: #18384a;
             font-weight: 700;
             display: block;
         }
-        @include screen640 {
-            span {
+        @include near_mobile {
+            figcaption>h4 {
                 font-size: 1.8rem;
             }
         }
@@ -400,8 +399,7 @@ $trans: all .3s ease;
     @include mobile {
         padding: 3rem 2rem;
     }
-    @include screen640 {
-        padding: 3rem 2rem;
+    @include near_mobile {
         .title {
             font-size: 1.7rem;
         }
@@ -435,7 +433,7 @@ $trans: all .3s ease;
         .download-button:first-child {
             margin-right: 8rem;
         }
-        @include screen640 {
+        @include near_mobile {
             .download-button {
                 max-width: 100%;
                 margin-bottom: 3rem;
@@ -472,7 +470,7 @@ $trans: all .3s ease;
                 display: inline-block;
             }
         }
-        @include screen640 {
+        @include near_mobile {
             .item {
                 max-width: 100%;
                 margin-bottom: 3rem;

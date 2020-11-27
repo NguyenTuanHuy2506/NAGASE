@@ -111,7 +111,7 @@ $trans: all .3s ease;
                         color: #d30712;
                     }
                 }
-                @include screen640 {
+                @include near_mobile {
                     width: 100%;
                     margin: 1.5rem 0;
                     .nav-link {
@@ -281,7 +281,7 @@ $trans: all .3s ease;
                 margin-top: 3rem;
             }
         }
-        @include screen640 {
+        @include near_mobile {
             p,
             a {
                 font-size: 1.6rem;
@@ -300,7 +300,7 @@ $trans: all .3s ease;
         display: flex;
         align-items: center;
         justify-content: center;
-        @include screen640 {
+        @include near_mobile {
             font-size: 1.4rem;
         }
     }

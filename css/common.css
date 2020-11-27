@@ -132,7 +132,7 @@ figure img {
     color: #d30712;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     .nav .navbar ul li {
         width: 100%;
         margin: 1.5rem 0;
@@ -336,7 +336,7 @@ figure img {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     .footer-container p,
     .footer-container a {
         font-size: 1.6rem;
@@ -357,7 +357,7 @@ figure img {
     justify-content: center;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     .footer .copy-right {
         font-size: 1.4rem;
     }

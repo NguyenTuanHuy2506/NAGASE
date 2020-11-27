@@ -2,6 +2,22 @@
 <html lang="ja">
 
 <head>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-98397356-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no, address=no, email=no">
@@ -10,10 +26,10 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
     <meta property="og:site_name" content="">
-    <meta property="og:title" content="">
+    <meta property="og:title" content="EASTMANガラスポリマーのご提案｜長瀬産業株式会社">
     <meta property="og:description" content="">
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="description" content="時代の変化に合わせた化粧品容器にEASTMANガラスポリマーをご提案します。">
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/bootstrap_custom.css" rel="stylesheet">
     <link href="./assets/plugins/slick/slick.css" rel="stylesheet">
@@ -21,7 +37,7 @@
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/top.css" rel="stylesheet">
     <!-- build:addcss -->
-    <title>NAGASE</title>
+    <title>EASTMANガラスポリマーのご提案</title>
 
 </head>
 
@@ -93,9 +109,11 @@
                     NEWS
                 </h3>
                 <article class="article">
-                    <a class="article-date" href="#">2020.11.00</a>
-                    <a class="article-desc" href="#">
+                    <a href="">
+                        <span class="article-date">2020.11.00</span>
+                        <span class="article-desc">
                         お知らせテキストテキスト<span class="fk-sym">、</span>テキストテキストテキストテキストテキストテキスト<span class="fk-sym">。</span>ここにお知らせが入ります。
+                        </span>
                     </a>
 
                 </article>
@@ -113,7 +131,7 @@
                 <div class="flex">
 
                     <div class="item">
-                        <a href="#">
+                        <a class="js-goto-tab" href="#jar-tab">
                             <figure>
                                 <img src="./images/top/img_comm_1.png" alt="Jar">
                                 <figcaption>
@@ -124,7 +142,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="#">
+                        <a class="js-goto-tab" href="#bottle-tab">
                             <figure>
                                 <img src="./images/top/img_comm_2.png" alt="Bottle">
                                 <figcaption>
@@ -135,7 +153,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="#">
+                        <a class="js-goto-tab" href="#cap-tab">
                             <figure>
                                 <img src="./images/top/img_comm_3.png" alt="Cap">
                                 <figcaption>
@@ -146,7 +164,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="#">
+                        <a class="js-goto-tab" href="#compact-tab">
                             <figure>
                                 <img src="./images/top/img_comm_4.png" alt="Compact Case">
                                 <figcaption>
@@ -157,7 +175,7 @@
                     </div>
 
                     <div class="item">
-                        <a href="#">
+                        <a class="js-goto-tab" href="#other-tab">
                             <figure>
                                 <img src="./images/top/img_comm_5.png" alt="Others">
                                 <figcaption>
@@ -174,7 +192,9 @@
         <!-- #region: video -->
         <div class="video-embed">
             <div class="video">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/480213816" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/480213816" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+                <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/480213816" width="100%" height="360" frameborder="0" allowfullscreen></iframe> -->
             </div>
         </div>
         <!-- #region -->
@@ -184,14 +204,17 @@
             <div class="container">
 
                 <!-- Jar grade -->
-                <div class="grade">
+                <div class="grade" id="jar-tab">
 
-                    <h4 class="feature-title">
+                    <figure class="feature-title">
                         <img src="./images/top/img_comm_1.png" alt="Jar grade">
-                        <span>
-                            Jar grade
-                        </span>
-                    </h4>
+                        <figcaption>
+                            <h4>
+                                Jar grade
+                            </h4>
+                        </figcaption>
+
+                    </figure>
 
                     <ul class="tab js-tab-jar" role="tablist">
                         <li class="tab-item active" data-tab="">
@@ -223,23 +246,23 @@
                         </div>
 
                         <div class="tab-index">
-                            <span class="title">2</span>
+                            <span class="title">高い耐薬品性と成形性</span>
                             <p class="desc">
-                                ガラスのような質感に近く、非結晶性の為、多くの肉厚ジャーの実績を持つグレードです。
+                                成形性、耐薬品性に優れており、日本国内で多くの実績を持つグレードです。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
                         <div class="tab-index">
-                            <span class="title">3</span>
+                            <span class="title">最高水準の物性バランスと耐熱性</span>
                             <p class="desc">
-                                ガラスのような質感に近く、非結晶性の為、多くの肉厚ジャーの実績を持つグレードです。
+                                特に高い落下衝撃強度、耐薬品性の物性に優れたグレードです。Tg約110℃と耐熱性も優れております。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
                         <div class="tab-index">
-                            <span class="title">4</span>
+                            <span class="title">最高クラスの透明性</span>
                             <p class="desc">
-                                ガラスのような質感に近く、非結晶性の為、多くの肉厚ジャーの実績を持つグレードです。
+                                ニュートラルな色目を持ち、落下衝撃強度に優れたグレードです。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
@@ -250,14 +273,17 @@
 
 
                 <!-- Bottle grade -->
-                <div class="grade">
+                <div class="grade" id="bottle-tab">
 
-                    <h4 class="feature-title">
+                    <figure class="feature-title">
                         <img src="./images/top/img_comm_2.png" alt="Bottle grade">
-                        <span>
-                            Bottle grade
-                        </span>
-                    </h4>
+                        <figcaption>
+                            <h4>
+                                Bottle grade
+                            </h4>
+                        </figcaption>
+
+                    </figure>
 
                     <ul class="tab js-tab-bottle" role="tablist">
                         <li class="tab-item" data-tab="">
@@ -276,9 +302,9 @@
 
                     <div class="tab-content js-content-bottle">
                         <div class="tab-index">
-                            <span class="title">1</span>
+                            <span class="title">高水準の透明性と耐衝撃性</span>
                             <p class="desc">
-                                非結晶性であり、コストと物性のバランスが取れたグレードです。
+                                落下衝撃強度に優れており、特にダイレクトブロー成型のボトルで多数の実績を持つグレードです。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
@@ -290,9 +316,9 @@
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
                         <div class="tab-index">
-                            <span class="title">3</span>
+                            <span class="title">最高水準の物性バランスと耐熱性</span>
                             <p class="desc">
-                                非結晶性であり、コストと物性のバランスが取れたグレードです。
+                                特に高い落下衝撃強度、耐薬品性の物性に優れ、様々な用途のボトルで採用実績を持つグレードです。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
@@ -302,14 +328,16 @@
 
 
                 <!-- Cap grade -->
-                <div class="grade">
+                <div class="grade" id="cap-tab">
 
-                    <h4 class="feature-title">
+                    <figure class="feature-title">
                         <img src="./images/top/img_comm_3.png" alt="Cap grade">
-                        <span>
-                            Cap grade
-                        </span>
-                    </h4>
+                        <figcaption>
+                            <h4>
+                                Cap grade
+                            </h4>
+                        </figcaption>
+                    </figure>
 
                     <ul class="tab js-tab-cap" role="tablist">
                         <li class="tab-item active" data-tab="">
@@ -335,16 +363,16 @@
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
                         <div class="tab-index">
-                            <span class="title">2</span>
+                            <span class="title">高い耐薬品性と成形性</span>
                             <p class="desc">
-                                ガラスのような質感に近く、非結晶性の為、多くの肉厚キャップの実績を持つグレードです。
+                                優れた成形性、耐薬品性を持ち、様々な形状のキャップにご使用いただけます。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
                         <div class="tab-index">
-                            <span class="title">3</span>
+                            <span class="title">最高水準の物性バランスと耐熱性</span>
                             <p class="desc">
-                                ガラスのような質感に近く、非結晶性の為、多くの肉厚キャップの実績を持つグレードです。
+                                特に高い落下衝撃強度、耐薬品性に優れたグレードです。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
@@ -354,14 +382,16 @@
 
 
                 <!-- Compact Case grade -->
-                <div class="grade">
+                <div class="grade" id="compact-tab">
 
-                    <h4 class="feature-title">
+                    <figure class="feature-title">
                         <img src="./images/top/img_comm_4.png" alt="Compact Case grade">
-                        <span>
-                            Compact Case grade
-                        </span>
-                    </h4>
+                        <figcaption>
+                            <h4>
+                                Compact Case grade
+                            </h4>
+                        </figcaption>
+                    </figure>
 
                     <ul class="tab js-tab-compact" role="tablist">
                         <li class="tab-item active" data-tab="">
@@ -383,9 +413,9 @@
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
                         <div class="tab-index">
-                            <span class="title">2</span>
+                            <span class="title">最高水準の物性バランスと耐熱性</span>
                             <p class="desc">
-                                ガラスのような質感に近く、非結晶性の為、多くの肉厚キャップの実績を持つグレードです。
+                                高い落下衝撃強度、耐薬品性に優れたグレードです。従来品よりも流動性が上がっております。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
@@ -394,14 +424,14 @@
                 </div>
 
                 <!-- Others -->
-                <div class="grade">
+                <div class="grade" id="other-tab">
 
-                    <h4 class="feature-title">
+                    <figure class="feature-title">
                         <img src="./images/top/img_comm_5.png" alt="Others">
-                        <span>
-                            Others
-                        </span>
-                    </h4>
+                        <figcaption>
+                            <h4>Others</h4>
+                        </figcaption>
+                    </figure>
 
                     <ul class="tab js-tab-others" role="tablist">
                         <li class="tab-item active" data-tab="">
@@ -432,25 +462,25 @@
                         </div>
 
                         <div class="tab-index">
-                            <span class="title">2</span>
+                            <span class="title">高い耐薬品性と成形性</span>
                             <p class="desc">
-                                木材のパルプを約48%使用した植物由来のプラスチックです。耐薬品性に優れております。
+                                高い透明性、耐薬品性に優れている事から、リップグロス等メイクアップ商品にも検討頂けるグレードです。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
 
                         <div class="tab-index">
-                            <span class="title">3</span>
+                            <span class="title">最高水準の物性バランスと耐熱性</span>
                             <p class="desc">
-                                木材のパルプを約48%使用した植物由来のプラスチックです。耐薬品性に優れております。
+                                高い耐衝撃強度に優れている為、超音波溶着など二次加工で強度が必要とされる商品への採用実績を持つグレードです。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
 
                         <div class="tab-index">
-                            <span class="title">4</span>
+                            <span class="title">最高クラスの透明性</span>
                             <p class="desc">
-                                木材のパルプを約48%使用した植物由来のプラスチックです。耐薬品性に優れております。
+                                ニュートラルな色目を持ち、落下衝撃強度に優れたグレードです。
                             </p>
                             <a class="download-button" href="#">物性表ダウンロード</a>
                         </div>
@@ -495,14 +525,14 @@
                             長瀬産業株式会社 カラー&プロセシング事業部ポリマープロダクツ部は、Eastman社・日本代理店として<span class="fk-sym">、</span>Tritan™「トライタン」をはじめ<span class="fk-sym">、</span>さまざまな樹脂を取り扱っております。
 
                         </p>
-                        <a class="about-logo" href="#">
+                        <a class="about-logo" href="https://www.nagase.co.jp/pp/tritan/">
                             <img src="./images/common/img_logo3.png" alt="brand logo">
                         </a>
                         <p class="explain">Tritan™「トライタン」Webサイトはこちら</p>
                     </div>
 
                     <div class="item">
-                        <a class="about-logo" href="#">
+                        <a class="about-logo" href="https://www.eastman.com/Pages/Home.aspx">
                             <img src="./images/common/img_logo2.jpg" alt="brand logo">
                         </a>
                         <span class="title">
@@ -512,7 +542,7 @@
                             Eastman社は<span class="fk-sym">、</span>人々の毎日の暮らしに見られる製品に使われる多岐にわたる高度な材料や添加剤<span class="fk-sym">、</span>機能製品<span class="fk-sym">、</span>特殊化学薬品<span class="fk-sym">、</span>繊維などを製造するグローバルな特殊化学薬品企業です。
 
                         </p>
-                        <a class="about-logo" href="#">
+                        <a class="about-logo" href="https://www.nagase.co.jp/color/">
                             <img src="./images/common/img_logo4.jpg" alt="brand logo">
                         </a>
                     </div>
@@ -540,9 +570,9 @@
                         </span>
                     </p>
 
-                    <a href="#">サイトポリシー</a>
-                    <a href="#">個人情報保護方針</a>
-                    <a href="#">長瀬産業TOPへ</a>
+                    <a href="https://www.nagase.co.jp/color/policy/">サイトポリシー</a>
+                    <a href="https://www.nagase.co.jp/privacy/">個人情報保護方針</a>
+                    <a href="https://www.nagase.co.jp/">長瀬産業TOPへ</a>
                 </div>
             </div>
 
@@ -557,7 +587,10 @@
     <script src="./assets/js/jquery-3.5.1.min.js"></script>
     <script src="./assets/plugins/slick/slick.min.js"></script>
     <script src="./js/general.js"></script>
-
+    <script type="text/javascript">
+        var Kairos3Tracker = "nagase_pp";
+    </script>
+    <script type="text/javascript" charset="utf-8" src="//c.k3r.jp"></script>
 </body>
 
 </html>

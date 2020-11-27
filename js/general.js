@@ -16,6 +16,8 @@ const _compactIndex = $('.js-content-compact .tab-index');
 const _othersItem = $('.js-tab-others .tab-item');
 const _othersIndex = $('.js-content-others .tab-index');
 
+// goto tab
+const _gotoTab = $('.js-goto-tab');
 
 _slider.slick({
     dots: false,
@@ -45,6 +47,18 @@ _slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 
     }
 });
+
+_gotoTab.on('click', function(e) {
+    e.preventDefault();
+    let _target = $(this).attr('href');
+    let _distance = $(_target).offset().top - 100;
+    $("html,body").animate({
+            scrollTop: _distance,
+        },
+        1000,
+        "swing"
+    );
+})
 
 
 _jarItem.on('click', function() {
