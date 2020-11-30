@@ -236,11 +236,18 @@
     color: rgba(24, 56, 74, 0.5);
 }
 
+.sp-only {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .news .article-more {
         margin-top: 3rem;
         margin-left: auto;
         margin-right: auto;
+    }
+    .sp-only {
+        display: inline-block;
     }
 }
 

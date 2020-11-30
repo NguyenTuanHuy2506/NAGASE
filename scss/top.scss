@@ -128,6 +128,13 @@ $trans: all .3s ease;
     max-width: 9px;
 }
 
+.sp-only {
+    display: inline-block;
+    @include mobile {
+        display: inline-block;
+    }
+}
+
 .news {
     background-color: #f0f5f4;
     &-title {
