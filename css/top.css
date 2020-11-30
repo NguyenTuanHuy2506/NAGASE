@@ -133,6 +133,12 @@
     margin-top: 3rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .article-desc {
+        margin-top: 1rem;
+    }
+}
+
 .fk-sym {
     display: inline-block;
     max-width: 9px;
@@ -233,6 +239,8 @@
 @media screen and (max-width: 767px) {
     .news .article-more {
         margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
