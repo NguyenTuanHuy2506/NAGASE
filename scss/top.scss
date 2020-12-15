@@ -16,10 +16,10 @@ $trans: all .3s ease;
             }
         }
     }
-    @include near_mobile {
-        height: 400px;
+    @include mobile {
+        height: calc(100vh - 50px);
         .slider {
-            height: 400px;
+            height: 100%;
             .slick-list,
             .slick-track {
                 height: 100%;
@@ -28,7 +28,7 @@ $trans: all .3s ease;
                 img {
                     height: 100%;
                     object-fit: cover;
-                    object-position: 60%;
+                    object-position: 65%;
                 }
             }
         }
